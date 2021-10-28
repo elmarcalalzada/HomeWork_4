@@ -57,25 +57,6 @@ namespace work
         //3.3. Verilmis string deyerinde verilmis char-in indexlerinden ibaret array qaytaran metod
         
 
-        static int[] FindIndex(string text, char chr)
-        {
-            int[] arr = new int[0];
-            for (int i = 0; i < text.Length; i++)
-            {
-                if (text[i] == chr)
-                {
-                    int[] temp = arr;
-                    arr = new int[arr.Length + 1]; 
-                    for (int k = 0; k < temp.Length; k++) 
-                    {
-                        arr[k] = temp[k];
-                    }
-                    arr[arr.Length - 1] = i; 
-
-                }
-
-            }
-            return arr;
 
 
 
